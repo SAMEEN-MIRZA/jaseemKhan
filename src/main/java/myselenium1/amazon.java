@@ -14,6 +14,7 @@ public class amazon {
 		driver.get("https://www.amazon.in");
 		driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
 	    driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("Samsung s24 ultra 5G");
 	    driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 	    Thread.sleep(2000);
