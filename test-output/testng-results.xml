@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[running m4]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-04-30T10:51:36 IST" name="Default suite" finished-at="2024-04-30T10:51:38 IST" duration-ms="2202">
+    <groups>
+    </groups>
+    <test started-at="2024-04-30T10:51:36 IST" name="Default test" finished-at="2024-04-30T10:51:38 IST" duration-ms="2202">
+      <class name="myselenium1.sample31">
+        <test-method signature="m4()[pri:0, instance:myselenium1.sample31@5158b42f]" started-at="2024-04-30T10:51:36 IST" name="m4" finished-at="2024-04-30T10:51:36 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[running m4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+        <test-method signature="m5()[pri:0, instance:myselenium1.sample31@5158b42f]" started-at="2024-04-30T10:51:36 IST" name="m5" finished-at="2024-04-30T10:51:38 IST" duration-ms="2020" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method myselenium1.sample31.m5() didn't finish within the time-out 2000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method myselenium1.sample31.m5() didn't finish within the time-out 2000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:509)
+at myselenium1.sample31.m5(sample31.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m5 -->
+        <test-method signature="m6()[pri:0, instance:myselenium1.sample31@5158b42f]" started-at="2024-04-30T10:51:38 IST" name="m6" finished-at="2024-04-30T10:51:38 IST" depends-on-methods="myselenium1.sample31.m4, myselenium1.sample31.m5" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method myselenium1.sample31.m6() on instance myselenium1.sample31@5158b42f depends on not successfully finished methods 
+[myselenium1.sample31.m4() on instance myselenium1.sample31@5158b42f
+myselenium1.sample31.m5() on instance myselenium1.sample31@5158b42f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method myselenium1.sample31.m6() on instance myselenium1.sample31@5158b42f depends on not successfully finished methods 
+[myselenium1.sample31.m4() on instance myselenium1.sample31@5158b42f
+myselenium1.sample31.m5() on instance myselenium1.sample31@5158b42f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m6 -->
+      </class> <!-- myselenium1.sample31 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
